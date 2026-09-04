@@ -1,5 +1,11 @@
 import joblib
 import pandas as pd
+from pathlib import Path
+
+BASE_DIR = Path(__file__).resolve().parent.parent
+
+MODEL_PATH = BASE_DIR / "models" / "final_xgb_model.pkl"
+THRESHOLD_PATH = BASE_DIR / "models" / "fraud_threshold.pkl"
 
 
 model = joblib.load("models/final_xgb_model.pkl")
