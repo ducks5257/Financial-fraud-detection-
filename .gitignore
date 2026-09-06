@@ -1,6 +1,30 @@
-data/
+# Python virtual environment
 venv/
 .venv/
+
+# Python cache
 __pycache__/
-*.pyc
-.vscode/
+*.py[cod]
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Dataset
+data/
+*.csv
+
+# Environment variables / secrets
+.env
+.env.*
+!.env.example
+
+# Frontend dependencies/build
+frontend/node_modules/
+frontend/dist/
+
+# OS / editor junk
+.DS_Store
+Thumbs.db
+
+# Optional logs
+*.log
